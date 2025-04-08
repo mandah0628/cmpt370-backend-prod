@@ -35,7 +35,7 @@ app.use("/search", searchRouter);
 app.use("/reservation", reservationRouter);
 app.use("/message", messageRouter);
 app.use("/user-review", userReviewRouter);
-app.use("/listing-review", listingReviewRouter)
+app.use("/listing-review", listingReviewRouter);
 
 
 app.get('/ping', (req, res) => {
