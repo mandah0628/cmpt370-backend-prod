@@ -38,6 +38,14 @@ app.use("/user-review", userReviewRouter);
 app.use("/listing-review", listingReviewRouter)
 
 
+app.get('/ping', (req, res) => {
+  res.send('pong');
+});
+
+app.post('/user/login', (req, res) => {
+  res.json({ message: 'POST /user/login reached backend' });
+});
+
 // undefined route handler
 // if a user sends a request to a route that doesn't exist
 app.use((req, res, next) => {
