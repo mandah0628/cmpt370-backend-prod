@@ -14,8 +14,13 @@ const messageRouter = require('./src/router/messageRouter.js');
 
 
 const app = express();
+
 app.use(cors({
-  origin: "https://cmpt370-prod-7i1gdqgsx-mandah0628s-projects.vercel.app"
+  origin: [
+    "https://cmpt370-prod.vercel.app",
+    "https://cmpt370-prod-git-main-mandah0628s-projects.vercel.app",
+    "https://cmpt370-prod-7i1gdqgsx-mandah0628s-projects.vercel.app"
+  ]
 }));
 // parses json request bodies into JS objects
 app.use(express.json({ limit: '10mb' }));
