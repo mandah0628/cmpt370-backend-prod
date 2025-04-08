@@ -60,7 +60,7 @@ app.use((err, req, res, next) => {
 });
 
 // define the express server port
-const PORT = process.env.EXPRESS_PORT || 5050;
+const PORT = process.env.EXPRESS_PORT || 8080;
 
 // starts the express server and establishes connection
 // with the database
