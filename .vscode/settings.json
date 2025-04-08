@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/063a57f9-fcb3-4faa-9323-1f2264ddcc4b/resourceGroups/appsvc_linux_canadacentral_basic/providers/Microsoft.Web/sites/cmpt370-backend-prod",
+    "appService.deploySubpath": "."
+}
