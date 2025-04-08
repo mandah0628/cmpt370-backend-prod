@@ -15,7 +15,7 @@ const messageRouter = require('./src/router/messageRouter.js');
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:3030",
+  origin: "https://cmpt370-prod-git-main-mandah0628s-projects.vercel.app",
   credentials: true
 }));
 // parses json request bodies into JS objects
