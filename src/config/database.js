@@ -18,6 +18,12 @@ require('dotenv').config({
       host: process.env.PGHOST,
       port: process.env.PGPORT || 5432,
       dialect: 'postgres',
+      dialectOptions: {
+        ssl: {
+          require:true,
+          rejectUnauthorized: false
+        }
+      }
     }
   );
   
