@@ -231,7 +231,7 @@ const deleteListing = async (req, res) => {
 // get listing data by its id
 const getListingById = async (req, res) => {
     try {
-        const listingId = req.params.listingId;
+        const listingId = req.params.id;
         
         if (!listingId) {
             return res.status(400).json({ message: "Missing listing ID" });
